@@ -1,6 +1,14 @@
 # ✨ The Cleaning Network (Clean Scene Network) ✨
 
+> [!TIP]
+> ### 👨‍💻 Developer Profile & Customization Services
+> **Lead Developer:** MD Arifur Rahman  
+> 💬 **WhatsApp:** [+880 1756-601431](https://wa.me/8801756601431)  
+> ✉️ **Email:** [arifur.fullstack@gmail.com](mailto:arifur.fullstack@gmail.com)  
+> 🛠️ **Notice:** For any additional custom integrations or platform tailoring, feel free to send a DM!
+
 [![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+
 [![React](https://img.shields.io/badge/React-18.x-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Supabase](https://img.shields.io/badge/Supabase-Database%20%26%20Auth-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
