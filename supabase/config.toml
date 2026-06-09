@@ -1,0 +1,19 @@
+project_id = "seybtckozzdcjgdgcsdq"
+
+[functions.get-og-metadata]
+verify_jwt = false
+
+[functions.get-og-image]
+verify_jwt = false
+
+[functions.send-push-notification]
+verify_jwt = false
+
+[functions.get-vapid-key]
+verify_jwt = false
+
+[functions.send-verification-email]
+verify_jwt = false
+
+[functions.send-verification-status-email]
+verify_jwt = false

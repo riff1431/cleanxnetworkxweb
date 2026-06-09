@@ -1,0 +1,1 @@
+UPDATE provider_verification_documents SET status = 'pending', reviewed_at = NULL, notes = NULL WHERE id IN ('a1e6a373-2139-4353-8149-e7b268bc31ca', '0a5eff4e-6f1e-4f08-8d87-52ecc9b82a7e');
