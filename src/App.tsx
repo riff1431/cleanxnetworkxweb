@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { AuthProvider } from "@/contexts/AuthContext";
 import { ThemeProvider } from "next-themes";
 import GlobalFontProvider from "@/components/GlobalFontProvider";
@@ -95,12 +95,13 @@ const AdminVerificationDocuments = lazy(() => import("./pages/admin-dashboard/Ad
 const queryClient = new QueryClient();
 
 const AnimatedApp = () => {
+  const location = useLocation();
   useMessageNotifications();
   usePushSubscription();
   return (
-    <PageTransition>
-      <Suspense fallback={<div className="min-h-screen bg-background" />}>
-        <Routes>
+    <Suspense fallback={<div className="min-h-screen bg-background" />}>
+      <PageTransition>
+        <Routes location={location}>
           <Route path="/" element={<Index />} />
           <Route path="/search" element={<Search />} />
           <Route path="/cleaner/:id" element={<CleanerPublicProfile />} />
@@ -181,8 +182,8 @@ const AnimatedApp = () => {
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Suspense>
-    </PageTransition>
+      </PageTransition>
+    </Suspense>
   );
 };
 
